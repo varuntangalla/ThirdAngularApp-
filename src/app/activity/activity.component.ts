@@ -9,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class ActivityComponent implements OnInit {
 
   activities: any;
+
+  message:string= 'welCome To JAVAtechie';
+  amount:number= 500;
+
   constructor(private http:HttpClient) { 
 
     
