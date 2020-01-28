@@ -5,11 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActivityComponent } from './activity/activity.component';
+import { PlayersComponent } from './players/players.component';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ActivityComponent
+    ActivityComponent,
+    PlayersComponent,
+    AgePipe
   ],
   imports: [
     BrowserModule,
