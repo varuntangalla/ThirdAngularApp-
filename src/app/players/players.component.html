@@ -12,6 +12,9 @@
 
 <title>Custom Pipe Example</title>
 <body>
+  <div style="text-align: center"> 
+  <input type="text" [(ngModel)]="searchName">
+</div>
  <div style="text-align: center">
     <h2 style="color: navy">Top Players</h2>
     <br /> </div>   
@@ -29,7 +32,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let player of players" >
+      <tr *ngFor="let player of players | filter:searchName" >
         <td>{{player.name}}</td>
         <td>{{player.team}}</td>
         <td>{{player.dob}}</td> 
